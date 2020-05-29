@@ -1,0 +1,9 @@
+
+<import src="../tabbar/tabbar.wxml"/> 
+ <template is="tabBar" data="{{tabBar}}"/>
+
+<image class="about"  />
+ <navigator class="nav" target="miniProgram" app-id="wx8ffc97ad5bcccc89" open-type="navigate">
+ <image class="vendor" src="/images/my/vendor.png"></image>
+ </navigator> 
+ <!-- <mp-tabbar style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{list}}" bindchange="tabChange"></mp-tabbar> -->

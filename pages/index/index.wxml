@@ -1,0 +1,5 @@
+ <import src="../tabbar/tabbar.wxml"/> 
+ <template is="tabBar" data="{{tabBar}}"/>
+ 第一种底部导航栏样式的页面
+ <button bindtap='tologs' size='mini' class="button">点击切换</button>
+
