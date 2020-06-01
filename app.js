@@ -57,6 +57,7 @@ App({
     },
     //第二种底部，原理同上
     editTabBar1: function () {
+      // debugger
       var curPageArr = getCurrentPages();
       var curPage = curPageArr[curPageArr.length - 1];
       var pagePath = curPage.route;
@@ -86,8 +87,8 @@ App({
         {
           "pagePath": "/pages/index/index",
           "text": "职位",
-          "iconPath": "/images/my.png",
-          "selectedIconPath": "/images/my.png",
+          "iconPath": "/images/my/my.png",
+          "selectedIconPath": "/images/my/my.png",
           "clas": "menu-item",
           "selectedColor": "#4EDF80",
           active: true
@@ -95,8 +96,8 @@ App({
         {
           "pagePath": "/pages/about/about",
           "text": "简历",
-          "iconPath": "/images/my.png",
-          "selectedIconPath": "/images/my.png",
+          "iconPath": "/images/my/my.png",
+          "selectedIconPath": "/images/my/my.png",
           "selectedColor": "#4EDF80",
           "clas": "menu-item",
           active: false
@@ -104,8 +105,8 @@ App({
         {
           "pagePath": "/pages/classic/classic",
           "text": "我的",
-          "iconPath": "/images/my.png",
-          "selectedIconPath": "/images/my.png",
+          "iconPath": "/images/my/my.png",
+          "selectedIconPath": "/images/my/my.png",
           "selectedColor": "#4EDF80",
           "clas": "menu-item",
           active: false
@@ -123,8 +124,8 @@ App({
         {
           "pagePath": "/pages/book/book",
           "text": "首页",
-          "iconPath": "/images/my.png",
-          "selectedIconPath": "/images/my.png",
+          "iconPath": "/images/my/my.png",
+          "selectedIconPath": "/images/my/my.png",
           "clas": "menu-item1",
           "selectedColor": "#4EDF80",
           active: false
@@ -132,8 +133,8 @@ App({
         {
           "pagePath": "/pages/logs/logs",
           "text": "消息",
-          "iconPath": "/images/my.png",
-          "selectedIconPath": "/images/my.png",
+          "iconPath": "/images/my/my.png",
+          "selectedIconPath": "/images/my/my.png",
           "selectedColor": "#4EDF80",
           "clas": "menu-item1",
           active: true
@@ -141,17 +142,17 @@ App({
         {
           "pagePath": "/pages/cont/index",
           "text": "简历",
-          "iconPath": "/images/my.png",
-          "selectedIconPath": "/images/my.png",
+          "iconPath": "/images/my/my.png",
+          "selectedIconPath": "/images/my/my.png",
           "selectedColor": "#4EDF80",
           "clas": "menu-item1",
           active: false
         },
         {
-          "pagePath": "/pages/detail/index",
+          "pagePath": "/pages/book-detail/index",
           "text": "我的",
-          "iconPath": "/images/my.png",
-          "selectedIconPath": "/images/my.png",
+          "iconPath": "/images/my/my.png",
+          "selectedIconPath": "/images/my/my.png",
           "selectedColor": "#4EDF80",
           "clas": "menu-item1",
           active: false

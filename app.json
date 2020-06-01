@@ -1,19 +1,45 @@
 {
-  "pages":[
+  "pages":[   
     "pages/index/index",
     "pages/logs/logs",
     "pages/classic/classic",
+    "pages/book-detail/book-detail",     
     "pages/book/book",
     "pages/my/my",
-    "pages/book-detail/book-detail",
     "pages/about/about"    
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "棒谷渠道商管理",
+    "navigationBarTextStyle":"white"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "color": "#c7c7c7",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "职位",
+        "iconPath": "/images/my/my.png",
+        "selectedIconPath": "/images/my/my.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "简历",
+        "iconPath": "/images/my/my.png",
+        "selectedIconPath": "/images/my/my.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/images/my/my.png",
+        "selectedIconPath": "/images/my/my.png"
+      }
+    ],
+    "position": "bottom"
+  }  
 }

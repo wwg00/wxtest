@@ -8,7 +8,7 @@ import {
 
 const bookModel = new BookModel()
 const likeModel = new LikeModel()
-
+var app = getApp();
 Page({
 
   /**
@@ -21,27 +21,31 @@ Page({
     likeCount: 0,
     posting: false
   },
-
+  tapNav(e){
+    e.currentTarget.dataset['path'];
+    console.log(e.currentTarget.dataset["path"])
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.showLoading()
-    const bid = options.bid
-    const detail = bookModel.getDetail(bid)
-    const comments = bookModel.getComments(bid)
-    const likeStatus = bookModel.getLikeStatus(bid)
-
-    Promise.all([detail, comments, likeStatus])
-    .then(res => {
-      this.setData({
-        book: res[0],
-        comments: res[1].comments,
-        likeStatus: res[2].like_status,
-        likeCount: res[2].fav_nums
-      })
-      wx.hideLoading()
-    })
+    // wx.showLoading()
+    // const bid = options.bid
+    // const detail = bookModel.getDetail(bid)
+    // const comments = bookModel.getComments(bid)
+    // const likeStatus = bookModel.getLikeStatus(bid)
+    // debugger
+    app.editTabBar1(); 
+    // Promise.all([detail, comments, likeStatus])
+    // .then(res => {
+    //   this.setData({
+    //     book: res[0],
+    //     comments: res[1].comments,
+    //     likeStatus: res[2].like_status,
+    //     likeCount: res[2].fav_nums
+    //   })
+    //   wx.hideLoading()
+    // })
 
     // detail.then(res => {
     //   this.setData({
