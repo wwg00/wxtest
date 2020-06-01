@@ -1,5 +1,12 @@
  <import src="../tabbar/tabbar.wxml"/> 
  <template is="tabBar" data="{{tabBar}}"/>
- 第一种底部导航栏样式的页面
- <button bindtap='tologs' size='mini' class="button">点击切换</button>
+
+ <!-- <button bindtap='tologs' size='mini' class="button">点击切换</button> -->
+ <view class="container">
+    <view  class="loginNav">
+       <van-button type="default" icon="https://b.yzcdn.cn/vant/icon-demo-1126.png" class="loginNavbtn">经理账号登录</van-button>
+       <van-button type="default" icon="/static/img/weixin.png" class="loginNavbtn2">微信登录</van-button>
+    </view>
+   
+</view>
 

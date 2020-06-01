@@ -25,7 +25,7 @@ Page({
   },
 
   onShow(options) {
-    this.userAuthorized1()
+    // this.userAuthorized1()
     // this.getMyBookCount()
     // this.getMyFavor()
     // wx.getUserInfo({

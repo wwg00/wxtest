@@ -14,7 +14,6 @@
     "navigationBarTitleText": "棒谷渠道商管理",
     "navigationBarTextStyle":"white"
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json",
   "tabBar": {
     "selectedColor": "#000000",
@@ -41,5 +40,5 @@
       }
     ],
     "position": "bottom"
-  }  
+  } 
 }
