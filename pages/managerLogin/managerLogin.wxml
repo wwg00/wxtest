@@ -1,0 +1,46 @@
+<!-- <import src="../tabbar/tabbar.wxml"/> 
+ <template is="tabBar" data="{{tabBar}}"/> -->
+
+ <!-- <button bindtap='toindex' size='mini' class="button">点击切换</button> -->
+  <view class="container" style="background:#ccc">
+     <view style="position:absolute;bottom:0;left:50%; transform: translate(-50%,-50%); display:flex;flex-direction: column;align-items: flex-end;">
+        <van-cell-group  >
+          <van-field
+            left-icon="/static/img/weixin.png"
+            value="{{ username }}"
+            clearable
+            placeholder="输入账号"
+            bind:click-icon="onClickIcon"
+            class="loginField"
+            border="{{ true }}"
+          />
+            <van-field
+            left-icon="/static/img/weixin.png"
+            value="{{ password }}"
+            clearable
+            type="password"
+            placeholder="输入密码"
+            border="{{ true }}"
+             class="loginField"
+          />
+        </van-cell-group>    
+        <view  class="loginNav">
+          <van-button type="default"  class="loginNavbtn" >
+          登录
+          <van-icon name="arrow" class="loginIcon" />
+          </van-button>
+        </view>   
+        <!-- <view >
+              <van-icon name="arrow-left"  style="display:inline-block;" />
+              <navigator url="/pages/staffLogin/staffLogin" redirect style="display:inline-block;">切换员工登录</navigator>                         
+        </view> -->
+        <view >
+
+              <navigator url="/pages/staffLogin/staffLogin" redirect style="display:inline-block;"  bindtap="test">
+                            <van-icon name="arrow-left"  style="display:inline-block;" />
+              切换员工登录
+              </navigator>                         
+        </view>
+     </view>
+
+</view>

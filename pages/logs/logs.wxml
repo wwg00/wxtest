@@ -1,4 +1,0 @@
-<import src="../tabbar/tabbar.wxml"/> 
- <template is="tabBar" data="{{tabBar}}"/>
- 第二种样式页面
- <button bindtap='toindex' size='mini' class="button">点击切换</button>

@@ -1,11 +1,15 @@
- <import src="../tabbar/tabbar.wxml"/> 
- <template is="tabBar" data="{{tabBar}}"/>
 
  <!-- <button bindtap='tologs' size='mini' class="button">点击切换</button> -->
  <view class="container">
     <view  class="loginNav">
-       <van-button type="default" icon="https://b.yzcdn.cn/vant/icon-demo-1126.png" class="loginNavbtn">经理账号登录</van-button>
-       <van-button type="default" icon="/static/img/weixin.png" class="loginNavbtn2">微信登录</van-button>
+       <van-button type="default" icon="https://b.yzcdn.cn/vant/icon-demo-1126.png" class="loginNavbtn" >
+         经理账号登录
+       <van-icon name="arrow" class="loginIcon" />
+       </van-button>
+       <van-button type="default" icon="/static/img/weixin.png" class="loginNavbtn2">
+       微信登录
+        <van-icon name="arrow"  class="loginIcon"/>
+       </van-button>
     </view>
    
 </view>

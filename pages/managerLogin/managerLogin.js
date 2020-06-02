@@ -13,7 +13,6 @@ Page({
   onLoad: function () {
     
     //加载本页面的tabBar样式
-    app.editTabBar1();
-  },
-
+    // app.editTabBar1();
+  }
 })  

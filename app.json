@@ -1,8 +1,9 @@
 {
   "pages":[   
+    "pages/staffLogin/staffLogin",
+    "pages/managerLogin/managerLogin",
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/classic/classic",
+
     "pages/book-detail/book-detail",     
     "pages/book/book",
     "pages/my/my",
@@ -21,7 +22,7 @@
     "color": "#c7c7c7",
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/book/book",
         "text": "职位",
         "iconPath": "/images/my/my.png",
         "selectedIconPath": "/images/my/my.png"
@@ -33,7 +34,7 @@
         "selectedIconPath": "/images/my/my.png"
       },
       {
-        "pagePath": "pages/my/my",
+        "pagePath": "pages/index/index",
         "text": "我的",
         "iconPath": "/images/my/my.png",
         "selectedIconPath": "/images/my/my.png"
