@@ -23,7 +23,7 @@ Page({
   },
   onChange(event){
 
-    tabBar.bar(event,this)
+    tabBar.tabChange(event)
 
   },
   /**

@@ -1,0 +1,16 @@
+
+  <!-- <wxs src="../tabbar/tabbar.js" module="tabbar" /> -->
+   <import src="../tabbar/tabbar.wxml"/> 
+ <template is="tabBar" data="{{tabBar}}"/>
+  <view class="container" >
+     <view style="position:absolute;left:50%; transform: translate(-50%,0);top:20rpx; display:flex;flex-direction: column;align-items: flex-end;"> 
+        <view  class="loginNav">
+          <van-button type="default"  class="loginNavbtn" wx:for="{{4}}" wx:key="*this">
+            提交
+          <van-icon name="arrow" class="loginIcon" />
+          </van-button>         
+        </view>   
+
+     </view>
+
+</view>

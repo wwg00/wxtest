@@ -1,6 +1,7 @@
 
 // pages/about/about.js
 var app = getApp();
+import tabBar from '../tabbar/tabbar.js'
 Page({
 
   /**
@@ -19,7 +20,13 @@ Page({
         "selectedIconPath": "../../../images/tab/my@highlight.png",
           badge: 'New',
           dot: true
-      }]   
+      }] ,
+      tabBar:tabBar  
+  },
+  onChange(event){
+
+    tabBar.tabChange(event)
+
   },
   tabChange(e) {
     console.log('tab change', e)
@@ -36,6 +43,8 @@ Page({
   onLoad: function (options) {
     // debugger
     // app.editTabBar();   
+    tabBar.tabActive(this)
+    console.log(this.data.tabBar)
   },
 
   /**
@@ -49,7 +58,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    console.log(tabBar)
   },
 
   /**

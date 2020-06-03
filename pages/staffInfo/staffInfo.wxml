@@ -1,0 +1,6 @@
+
+<import src="../tabbar/tabbar.wxml"/> 
+ <template is="tabBar" data="{{tabBar}}"/>
+<view >  
+ {{tabBar.active}} about
+</view>

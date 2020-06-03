@@ -1,20 +1,19 @@
 {
-  "pages":[   
-    "pages/book/book",    
+  "pages": [
+    "pages/pickTask/pickTask",
     "pages/staffLogin/staffLogin",
     "pages/managerLogin/managerLogin",
     "pages/index/index",
-
-    "pages/book-detail/book-detail",     
-
+    "pages/book-detail/book-detail",
     "pages/my/my",
-    "pages/about/about"    
+    "pages/staffInfo/staffInfo",
+    "pages/book/sf"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "棒谷渠道商管理",
-    "navigationBarTextStyle":"white"
+    "navigationBarTextStyle": "white"
   },
   "sitemapLocation": "sitemap.json",
   "tabBar": {
@@ -23,13 +22,13 @@
     "color": "#c7c7c7",
     "list": [
       {
-        "pagePath": "pages/book/book",
+        "pagePath": "pages/my/my",
         "text": "职位",
         "iconPath": "/images/my/my.png",
         "selectedIconPath": "/images/my/my.png"
       },
       {
-        "pagePath": "pages/about/about",
+        "pagePath": "pages/book-detail/book-detail",
         "text": "简历",
         "iconPath": "/images/my/my.png",
         "selectedIconPath": "/images/my/my.png"
@@ -42,5 +41,5 @@
       }
     ],
     "position": "bottom"
-  } 
+  }
 }

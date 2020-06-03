@@ -30,14 +30,14 @@
   margin: 130rpx;
 }
 
-page {height:100%}
+page {height:100%;background:#ccc}
 .container{
   height:100%
 }
 .loginNav{
   display: flex;
   flex-direction:column ;
-  justify-content: center;  
+  justify-content: center;    
 }
 
 .loginNav  button{
