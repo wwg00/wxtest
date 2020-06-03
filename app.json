@@ -1,11 +1,12 @@
 {
   "pages":[   
+    "pages/book/book",    
     "pages/staffLogin/staffLogin",
     "pages/managerLogin/managerLogin",
     "pages/index/index",
 
     "pages/book-detail/book-detail",     
-    "pages/book/book",
+
     "pages/my/my",
     "pages/about/about"    
   ],

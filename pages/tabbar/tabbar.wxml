@@ -1,5 +1,5 @@
 <template name="tabBar">    
-  <view class="tab-bar" style="color: {{tabBar.color}}; background: {{tarBar.backgroundColor}}; {{tabBar.position=='top'? 'top: 0' : 'bottom: 0'}}; {{tabBar.borderStyle? (tabBar.position=='top'? 'border-bottom: solid 1px '+tabBar.borderStyle + ';' : 'border-top: solid 1px '+tabBar.borderStyle + ';') : ''}}">    
+  <!-- <view class="tab-bar" style="color: {{tabBar.color}}; background: {{tarBar.backgroundColor}}; {{tabBar.position=='top'? 'top: 0' : 'bottom: 0'}}; {{tabBar.borderStyle? (tabBar.position=='top'? 'border-bottom: solid 1px '+tabBar.borderStyle + ';' : 'border-top: solid 1px '+tabBar.borderStyle + ';') : ''}}">    
   <block wx:for="{{tabBar.list}}" wx:key="pagePath">    
     <navigator url="{{item.pagePath}}" open-type="redirect" class="{{item.clas}}" style="{{item.active? 'color: '+(item.selectedColor? item.selectedColor : tabBar.selectedColor) : ''}}"  wx:if='{{!item.active}}'>    
       <image src="{{item.selectedIconPath}}" wx:if="{{item.active}}" class="img"></image>    
@@ -13,13 +13,13 @@
     </navigator>     
     </block>  
     <view class="clear"></view>    
-  </view>    
-  <!-- <view class="page">
-    <view class="page__hd">
-        <view class="page__title">Tabbar</view>
-        <view class="page__desc">类似小程序原生tabbar的组件，可用于自定义tabbar</view>
-    </view>
-    <mp-tabbar style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{tabBar.list}}" bindchange="tabChange"></mp-tabbar>
-  </view> -->
+  </view>   -->
+
+<van-tabbar active="{{ tabBar.active }}" bind:change="onChange">
+  <van-tabbar-item name="home" icon="home-o">标签</van-tabbar-item>
+  <van-tabbar-item name="search" icon="search">标签</van-tabbar-item>
+  <van-tabbar-item name="friends" icon="friends-o">标签</van-tabbar-item>
+  <van-tabbar-item name="setting" icon="setting-o">标签</van-tabbar-item>
+</van-tabbar>
 </template>   
 

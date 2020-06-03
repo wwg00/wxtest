@@ -6,6 +6,8 @@ import {
   random
 } from '../../utils/common.js'
 
+import tabBar from '../tabbar/tabbar.js'
+
 const bookModel = new BookModel()
 var app = getApp();
 Page({
@@ -16,9 +18,14 @@ Page({
   data: {
     books: [],
     searching: false,
-    more: ''
+    more: '',
+    tabBar:tabBar
   },
+  onChange(event){
 
+    tabBar.bar(event,this)
+
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -29,8 +36,7 @@ Page({
     //       books: res
     //     })
     //   })
-
-      app.editTabBar1(); 
+  
   },
 
   onSearching (event) {
@@ -59,4 +65,5 @@ Page({
   onShow: function () {
     // debugger
   },
+
 })

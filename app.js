@@ -51,6 +51,7 @@ App({
           tabBar.list[i].active = true;    //根据页面地址设置当前页面状态    
         }
       }
+      
       curPage.setData({
         tabBar: tabBar
       });
@@ -71,9 +72,10 @@ App({
           tabBar.list[i].active = true; 
         }
       }
-      curPage.setData({
-        tabBar: tabBar
-      });
+      // debugger
+      // curPage.setData({
+      //   tabBar: tabBar
+      // });
     },
   globalData: {
     userInfo: null,

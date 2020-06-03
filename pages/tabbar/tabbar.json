@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "mp-tabbar": "/miniprogram_npm/weui-miniprogram/tabbar/tabbar"  
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index"    
   }
 }
