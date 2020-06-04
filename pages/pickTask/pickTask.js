@@ -7,7 +7,7 @@ import {
 } from '../../utils/common.js'
 
 import tabBar from '../tabbar/tabbar.js'
-
+import Notify from '../../miniprogram_npm/@vant/weapp/notify/notify';
 const bookModel = new BookModel()
 var app = getApp();
 Page({
@@ -36,7 +36,14 @@ Page({
     //       books: res
     //     })
     //   })
-  
+    // Notify({
+    //   message: '自定义颜色',
+    //   color: '#ad0000',
+    //   background: '#ffe1e1',
+    //   duration:0,
+    //   top:'78%'
+    // });
+    tabBar.tabActive(this)
   },
 
   onSearching (event) {

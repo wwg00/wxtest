@@ -21,7 +21,8 @@ Page({
           badge: 'New',
           dot: true
       }] ,
-      tabBar:tabBar  
+      tabBar:tabBar  ,
+      loading:false
   },
   onChange(event){
 

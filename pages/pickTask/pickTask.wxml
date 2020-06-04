@@ -1,16 +1,68 @@
 
   <!-- <wxs src="../tabbar/tabbar.js" module="tabbar" /> -->
-   <import src="../tabbar/tabbar.wxml"/> 
+ <import src="../tabbar/tabbar.wxml"/> 
  <template is="tabBar" data="{{tabBar}}"/>
-  <view class="container" >
-     <view style="position:absolute;left:50%; transform: translate(-50%,0);top:20rpx; display:flex;flex-direction: column;align-items: flex-end;"> 
+  <!-- <view class="container" >
+     <view style="position:absolute;left:50%; transform: translate(-50%,0);top:20rpx; display:flex;flex-direction: column;align-items: flex-end;max-height: 860rpx;overflow:auto"> 
         <view  class="loginNav">
-          <van-button type="default"  class="loginNavbtn" wx:for="{{4}}" wx:key="*this">
-            提交
-          <van-icon name="arrow" class="loginIcon" />
-          </van-button>         
-        </view>   
+          <van-button type="default"  class="loginNavbtn" wx:for="{{40}}" wx:key="*this">
+           <view style="height:100%;margin-top: -24rpx;">
+              <text style="text-align:left">
+              地址:佛山世必达创意园
+              </text> 
+              <text style="font-size: 12px;">最晚到达时间: 2020/04/15 16:00</text>           
+           </view>
 
+          <van-icon name="arrow" class="loginIcon" />
+          </van-button>    
+   
+        </view>   
+  
      </view>
 
 </view>
+          <view style="position:fixed;bottom:42px;left:0;width:100%">
+               <view  class="columnFlex">
+                <van-button type="default" class="notify" >
+                      您有12条任务待完成
+                      <van-icon name="arrow"   class="notifyIcon" />
+                  </van-button>   
+                </view>
+                <van-cell-group  >
+                  <van-field
+                    value="{{ username }}"
+                    clearable
+                    placeholder="输入提货邀请码"
+                    bind:click-icon="onClickIcon"
+                    class="loginField"
+                    border="{{ true }}"
+                  >
+                      <van-button slot="button" size="small" type="primary" >添加</van-button>
+                  </van-field>
+                </van-cell-group>      
+          </view>   -->
+          <view class="container" >
+               <view style="margin:20rpx 30rpx;max-height: 900rpx;overflow:auto">
+                  <van-cell title="地址:佛山世必达创意园" is-link size="large" label="最晚到达时间: 2020/04/15 16:00"  wx:for="{{40}}" wx:key="*this"/>
+                </view>  
+          </view>
+          <view style="position:fixed;bottom:42px;left:0;width:100%">
+               <view  class="columnFlex">
+                <van-button type="default" class="notify" >
+                      您有12条任务待完成
+                      <van-icon name="arrow"   class="notifyIcon" />
+                  </van-button>   
+                </view>
+                <van-cell-group  >
+                  <van-field
+                    value="{{ username }}"
+                    clearable
+                    placeholder="输入提货邀请码"
+                    bind:click-icon="onClickIcon"
+                    class="loginField"
+                    border="{{ true }}"
+                  >
+                      <van-button slot="button" size="small" type="primary" >添加</van-button>
+                  </van-field>
+                </van-cell-group>      
+          </view>           

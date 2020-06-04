@@ -16,7 +16,7 @@ let tabActive = function (self){
 }
 module.exports = {
   tabChange: tabChange,
-  active:'/pages/pickTask/pickTask',
+  active:'/pages/staffInfo/staffInfo',
   tabActive:tabActive
 };
 // module.exports.msg = 1;

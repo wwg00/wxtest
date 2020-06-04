@@ -1,6 +1,35 @@
 
 <import src="../tabbar/tabbar.wxml"/> 
  <template is="tabBar" data="{{tabBar}}"/>
-<view >  
- {{tabBar.active}} about
+<view  class="container">  
+   <van-skeleton title avatar row="1"  loading="{{ loading }}">
+        <view  style="margin:20rpx 30rpx;background:#fff;">
+           <!-- <van-icon name="https://b.yzcdn.cn/vant/icon-demo-1126.png" size="50px" />
+           <text>李斯</text>
+            <text>李斯</text> -->  
+                  <van-cell  title="李斯" is-link size="large" label="广州棒谷科技股份有限公司" >
+                     <van-icon name="https://b.yzcdn.cn/vant/icon-demo-1126.png" size="50px" slot="icon" />
+                  </van-cell>
+                  <view  style="margin:0 auto;width:300px;">
+                     <van-image width="300" height="300" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+                  </view>
+                 
+        </view>
+        <view  style="margin:20rpx 30rpx;background:#fff;">
+          <van-cell title="退出登录"  clickable />
+        </view>
+   </van-skeleton>
+             <view style="position:fixed;bottom:42px;left:0;width:100%">
+               <!-- <view  class="columnFlex">
+                <van-button type="default" class="notify" >
+                      您有12条任务待完成
+                      <van-icon name="arrow"   class="notifyIcon" />
+                  </van-button>   
+                </view>    -->
+                <van-notice-bar
+                  mode="link"
+                  speed="50"
+                  text="您有12条任务待完成11111111111111111111111111111"
+                />
+          </view>   
 </view>

@@ -1,21 +1,18 @@
-/* pages/about/about.wxss */
-
-.about{
-  width:750rpx;
-  height:100%;
-  
+.columnFlex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.vendor{
+.columnFlex .notify{
+   width: 100%;
+}
+.notify button{
+  width: 100%;
+  justify-content: space-between;
+}
+.notify .notifyIcon{
   position: absolute;
-  top:800rpx;
-  left:500rpx;
-  height:70rpx;
-  width:190rpx;
-  z-index: 99;
-}
-.nav{
-  height:70rpx;
-}
-page{
-  background-size:100% 100%; 
+  right: 18rpx;
+  top: 50%;
+  transform: translate(0,-50%);
 }
